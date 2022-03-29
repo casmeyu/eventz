@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" stylesheet" href="stylesheet.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+    <title>eventz</title>
+</head>
+<body>
+    <header>
+        <div class ="logo">
+        <h2>eventz</h2>
+        </div>
+        <div class="options">
+            <div class="map">
+                <h3>map</h3>
+            </div>
+            <div class="events">
+                <h3>events</h3>
+            </div>
+        </div>
+    </header>
+    <div id="map"></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoib2pvLXBlcmV6b3NvIiwiYSI6ImNrejIyMmxpZzFyemcyb2xyeDYxYnlid3YifQ.MoxXBNQkvW_xmIPYh0fh9A';
+    const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-74.5, 40], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+    });
+    </script>
+    <footer>
+        <ul>
+            <li><div class="burguermenu"><img src="./img/burguermenu.png" alt="UserIcon"></div></li>
+            <li><div class="addnew"><img src="./img/addnew.png" alt="FiltersIcon"></div></li>
+            <li><div class="usericon"><img src="./img/usericon.png." alt="FiltersIcon"></div></li>
+        </ul>
+    </footer>
+</body>
+</html>
