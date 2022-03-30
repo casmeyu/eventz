@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=" stylesheet" href="stylesheet.css">
+    <link rel=" stylesheet" href="liststyle.css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,29 +16,20 @@
 <body>
     <header>
         <div class ="logo">
-            <h1>eVents</h1>
+        <h1>eVents</h1>
         </div>
         <div class="options">
-            <div class="map">
+            <div class="map" onclick="location.href='index.html'">
                 <h3>Map</h3>
             </div>
-            <div class="events" onclick="location.href='events.html'">
+            <div class="events">
                 <h3>Explore</h3>
             </div>
         </div>
     </header>
-    <div class = "container">
-        <div id="map"></div>
+    <div class="list">
+
     </div>
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1Ijoib2pvLXBlcmV6b3NvIiwiYSI6ImNrejIyMmxpZzFyemcyb2xyeDYxYnlid3YifQ.MoxXBNQkvW_xmIPYh0fh9A';
-    const map = new mapboxgl.Map({
-    container: 'map', // container ID
-    style: 'mapbox://styles/mapbox/streets-v11', // style URL
-    center: [-74.5, 40], // starting position [lng, lat]
-    zoom: 9 // starting zoom
-    });
-    </script>
     <footer>
         <div class="icons">
             <div class="burguermenu"><span></span></div>

@@ -1,40 +1,47 @@
 body {
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
     position: relative;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box
 }
 header {
-    background-color: #181bc5;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(177, 177, 177);
     padding-bottom: .5rem;
 }
 .logo {
     display: flex;
     width: 100%;
-    height: 40px;
+    height: 6vh;
     margin: 0%;
     padding: 0%;
     
-    color: white;
+    color: black;
     align-items: center;
 }
-.logo h2 {
-    margin: 0;
+.logo h1 {
+    margin-left: 2%;
+    font-size: 30px;
 }
 
 .options {
     display: flex;
     
     margin: auto;
-    width: 80%;
-    height: 40px;
-    background-color: #181bc5;
-    border: 2px solid white;
-    border-radius: 8px;
+    width: 90%;
+    height: 3vh;
+    background-color: rgb(177, 177, 177);
     color: white;
     text-align: center;
     justify-content: space-around;
+}
+.options a {
+    text-decoration: none;
+    color: white;
+    cursor: default;
 }
 header .options:first-child {
     border-left: 1px solid white;
@@ -48,8 +55,10 @@ header .options:first-child {
 .map:hover {
     height: 100%;
     width: 50%;
-    background-color: #070850;
-    line-height: 25%;
+    border-bottom: 2px solid rgb(82, 82, 82);
+}
+.map:active {
+
 }
 .events {
     line-height: 100%;
@@ -59,61 +68,50 @@ header .options:first-child {
 .events:hover {
     height: 100%;
     width: 50%;
-    background-color: #070850;
-    line-height: 25%;
+    border-bottom: 2px solid rgb(82, 82, 82);
+    line-height: 22%;
+}
+.container {
+    display: block;
+    max-height:max-content;
+    width: 100%;
 }
 
 #map {
-    height: 700px;
-    width: 100%; 
+    height: 85vh;
+    width: 100%;
 }
 footer {
-    display: flex;
     width: 100%;
-    height: 70px;
-    max-height: 70px;
+    height: 5vh;
     bottom: 0;
-    background-color: #2024ee;
+    background-color: rgb(177, 177, 177);
 }
-ul {
-    list-style: none;
-    padding: 0%;
-}
-li {
-    display: block;
+.icons {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 .burguermenu {
+    width: 33%;
     background-image: url(./img/burguermenu.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    position: relative;
-    height: 1.2rem;
-    width: 33%;
 }
 .addnew {
+    width: 33%;
     background-image: url(./img/addnew.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    position: relative;
-    height: 1.2rem;
-    width: 33%;
 }
 .usericon {
-    background-image: url(./img/burguermenu.png);
+    width: 33%;
+    background-image: url(./img/usericon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    position: relative;
-    height: 1.2rem;
-    width: 1.2rem;
-}
-.container {
-    width: 100%;
-    position: absolute;
-    bottom: 0%;
-    top: 0%;
 }
